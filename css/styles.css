@@ -514,13 +514,17 @@ ul, ol {
     fill: var(--primary-white-color);
 }
 
-/* FOOTER INPUT */
+/* FOOTER FORM */
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+}
 
 .footer-email-label {
-    display: inline-block;
+    display: block;
     width: 358px;
     height: 50px;
-    margin-right: 12px;
 }
 
 .footer-email-input {
