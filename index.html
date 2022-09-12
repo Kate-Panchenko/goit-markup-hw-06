@@ -420,7 +420,7 @@
         </div>
     </footer>
 
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="close-icon" width="18" height="18">
@@ -466,16 +466,19 @@
                 </label>
 
                 <label class="modal-form-check-field">
-                    <input type="checkbox" name="policy" class="modal-form-checkbox" required>
-                    Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                    <input type="checkbox" name="policy" class="modal-form-checkbox visually-hidden" required>
+                    <svg class="modal-form-own-checkbox" width="16" height="15">
+                        <use class="modal-form-own-checkbox-icon" href="./images/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span class="modal-form-checkbox-desc">
+                        Погоджуюся з розсилкою та приймаю <a class="modal-form-checkbox-desc-link" href="">Умови договору</a>
+                    </span>
                 </label>
 
                 <button type="submit" class="submit-button send">Відправити</button>
             </form>
         </div>
     </div>
-
-    <!--backdrop is-hidden -->
 
     <script src="./js/modal.js"></script>
 </body>
