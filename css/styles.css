@@ -841,6 +841,7 @@ ol {
   border: 2px solid var(--primary-black-color);
   border-radius: 2px;
   cursor: pointer;
+  transition: box-shadow var(--transition-basic);
 }
 
 .modal-form-own-checkbox-icon {
@@ -855,6 +856,10 @@ ol {
 
 .modal-form-checkbox:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
   display: block;
+}
+
+.modal-form-checkbox:focus + .modal-form-own-checkbox {
+  box-shadow: 0 0 0 1px var(--accent-color);
 }
 
 .modal-form-checkbox-desc {
